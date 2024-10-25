@@ -43,7 +43,7 @@ const PackagesPageWrapper: React.FC = () => {
                   <li>Lead attribution strategy</li>
                   <li>Response templates & sequences</li>
                   <li>SDR hiring and training support</li>
-                  <li>Tailored sales development playbook<  /li>
+                  <li>Tailored sales development playbook</li>
                 </ul>
               </div>
               <div className="absolute inset-0 border border-[#8CC63F] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
