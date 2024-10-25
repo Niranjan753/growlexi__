@@ -41,10 +41,11 @@ export default function LandingPage() {
     <div className="min-h-screen bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Header />
-        <main className="py-12 sm:py-20 text-center relative overflow-hidden mt-16">
+        <Clients />
+        <main className="py-12 sm:py-20 text-center relative overflow-hidden mt-0">
           <div className="absolute inset-0 bg-black z-0"></div>
           <div className="relative z-10">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 ">
               <span className="bg-gradient-to-r from-white via-gray-300 to-gray-100 text-transparent bg-clip-text">
                 The Precision-Driven
               </span>
@@ -82,14 +83,10 @@ export default function LandingPage() {
                 </button>
               </Link>
             </div>
-            <div className="mt-12">
-              <Clients />
-            </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black to-transparent"></div>
         </main>
       </div>
-      <div id="about-us"><We /></div>
+      <div id="about-us" className="mt-[-3rem]"><We /></div>
       <div id="roadmap"><Roadmap /></div>
       <div className="flex justify-center mt-8">
         <Link href="/packages" className="relative inline-flex group">

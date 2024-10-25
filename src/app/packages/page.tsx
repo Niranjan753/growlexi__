@@ -12,7 +12,7 @@ const PackagesPageWrapper: React.FC = () => {
         <main className="py-12 sm:py-20 text-center relative overflow-hidden mt-16">
           <h1 className="text-4xl font-bold mb-12">Our Packages</h1>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden group max-w-md mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               <div className="relative z-10">
@@ -43,12 +43,14 @@ const PackagesPageWrapper: React.FC = () => {
                   <li>Lead attribution strategy</li>
                   <li>Response templates & sequences</li>
                   <li>SDR hiring and training support</li>
-                  <li>Tailored sales development playbook</li>
+                  <li>Tailored sales development playbook<  /li>
                 </ul>
               </div>
               <div className="absolute inset-0 border border-[#8CC63F] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
             </div>
+          </div>
 
+          <div className="mb-16">
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden group max-w-md mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
               <div className="relative z-10">

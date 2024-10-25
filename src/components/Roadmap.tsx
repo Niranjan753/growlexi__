@@ -66,10 +66,10 @@ const Roadmap: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Your Roadmap</h2>
-        <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-9">Your Roadmap</h2>
+        <div className="text-center mb-4">  
           <Link href="https://meetings.hubspot.com/stephen-comstock" target="_blank" rel="noopener noreferrer" className="relative inline-flex group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <button className="relative px-6 sm:px-8 py-3 bg-[#8CC63F] rounded-full leading-none flex items-center divide-x divide-gray-600 w-full sm:w-auto justify-center text-base">

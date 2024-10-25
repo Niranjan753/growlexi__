@@ -7,7 +7,6 @@ import Header from '@/components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
 
 interface TeamMemberProps {
   imageSrc?: string;
@@ -20,12 +19,7 @@ interface TeamMemberProps {
 }
 
 const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role, description, linkedIn, imageStyle, useIcon }) => (
-  <motion.div 
-    className="bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-md p-6 transform hover:shadow-xl transition-all duration-300 border border-gray-800 h-full"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-  >
+  <div className="bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-md p-6 transform hover:shadow-xl transition-all duration-300 border border-gray-800 h-full">
     <div className="flex flex-col items-center h-full">
       <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
         {useIcon ? (
@@ -44,34 +38,34 @@ const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role, descripti
         </a>
       )}
     </div>
-  </motion.div>
+  </div>
 );
 
 const TeamPage: React.FC = () => {
   const teamMembers = [
     {
-      imageSrc: "/founder.jpg",
+      imageSrc: "/45.png",
       name: "Stephen Comstock",
       role: "Founder",
       description: "Stephen's professional journey is a tapestry of strategic innovation and leadership across tech and sales. His expertise in leading teams and driving demand stands out. His experience in spearheading technology and sales strategies, reflects a dynamic blend of technological acumen and business growth savvy",
       linkedIn: "https://www.linkedin.com/in/stephencomstock"
     },
     {
-      imageSrc: "/null.jpg",
+      imageSrc: "/12.png",
       name: "Ashish Vaishnav",
       role: "Senior Director of Implementation",
       description: "Expert in implementing complex technological solutions.",
       linkedIn: "https://www.linkedin.com/in/ashish-vaishnav/"
     },
     {
-      imageSrc: "/brian cooper.jpg",
+      imageSrc: "/34.png",
       name: "Brian Cooper",
       role: "Sales Enablement Manager",
       description: "Drives sales performance with innovative strategies.",
       linkedIn: "https://www.linkedin.com/in/brian-cooper-3b5973294/"
     },
     {
-      imageSrc: "/rishabhpandey.jpg",
+      imageSrc: "/23.png",
       name: "Rishabh Pandey",
       role: "Automation Consultant",
       description: "Rishabh has diverse experience ranging from customer relations to mastering sales development strategies. His skillset is a blend of analytical acumen and campaign expertise to innovate and drive operational excellence in the fast-paced tech landscape.",
@@ -89,28 +83,18 @@ const TeamPage: React.FC = () => {
   return (
     <>
       <Header />
-      <motion.div 
-        className="min-h-screen bg-gradient-to-b from-black via-gray-900 mt-10 to-black text-white py-16 px-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
+      <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 mt-10 to-black text-white py-16 px-4 animate-fade-in">
         <div className="max-w-6xl mx-auto">
-          <motion.h1 
-            className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] text-transparent bg-clip-text"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] text-transparent bg-clip-text">
             Meet Our Team
-          </motion.h1>
+          </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
       <Footer />
     </>
   );
