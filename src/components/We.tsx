@@ -12,9 +12,6 @@ const We: React.FC = () => {
             GrowLexi
           </h1>
           <h2 className="text-3xl md:text-4xl font-light mb-6">
-            transforms your outreach
-          </h2>
-          <h2 className="text-3xl md:text-4xl font-light mb-6">
             <span className="bg-gradient-to-r from-[#8CC63F] to-[#5A822A] text-transparent bg-clip-text">
               We attract decision-makers
             </span>

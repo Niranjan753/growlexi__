@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   }, []);
 
   const handleLogoClick = () => {
-    window.location.reload();
+    router.push('/');
   };
 
   const handleLetsTalkClick = () => {

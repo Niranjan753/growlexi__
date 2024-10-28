@@ -34,14 +34,14 @@ export default function LandingPage() {
   }, []);
 
   const handleLogoClick = () => {
-    window.location.reload();
+    router.push('/');
   };
 
   return (
     <div className="min-h-screen bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Header />
-        <Clients />
+  
         <main className="py-12 sm:py-20 text-center relative overflow-hidden mt-0">
           <div className="absolute inset-0 bg-black z-0"></div>
           <div className="relative z-10">
@@ -82,7 +82,9 @@ export default function LandingPage() {
                   </span>
                 </button>
               </Link>
+             
             </div>
+            <Clients />
           </div>
         </main>
       </div>
