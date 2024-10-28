@@ -12,13 +12,12 @@ interface TeamMemberProps {
   imageSrc?: string;
   name: string;
   role: string;
-  description: string;
   linkedIn?: string;
   imageStyle?: React.CSSProperties;
   useIcon?: boolean;
 }
 
-const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role, description, linkedIn, imageStyle, useIcon }) => (
+const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role, linkedIn, imageStyle, useIcon }) => (
   <div className="bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-md p-6 transform hover:shadow-xl transition-all duration-300 border border-gray-800 h-full">
     <div className="flex flex-col items-center h-full">
       <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
@@ -38,7 +37,6 @@ const TeamMember: React.FC<TeamMemberProps> = ({ imageSrc, name, role, descripti
       </div>
       <h3 className="text-xl font-bold text-[#8CC63F] mb-1">{name}</h3>
       <h4 className="text-sm font-semibold text-gray-300 mb-3">{role}</h4>
-      <p className="text-gray-400 text-sm mb-4 text-center flex-grow">{description}</p>
       {linkedIn && (
         <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-[#8CC63F] hover:text-[#A0E350] transition-colors duration-200 text-sm mt-auto">
           <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
