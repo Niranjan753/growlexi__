@@ -13,7 +13,7 @@ const PackagesPageWrapper: React.FC = () => {
           <h1 className="text-4xl font-bold mb-12">Our Packages</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-md mx-auto w-full border border-[#8CC63F]">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-md mx-auto w-full shadow-[0_0_15px_rgba(140,198,63,0.3)]">
               <div className="relative z-10">
                 <h2 className="text-3xl font-semibold mb-4">Lead Activation Services</h2>
                 <p className="text-xl font-bold text-white bg-red-600 mb-6 p-2 rounded-lg shadow-md inline-block">Starting at $799</p>
@@ -29,7 +29,7 @@ const PackagesPageWrapper: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-md mx-auto w-full border border-[#8CC63F]">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-md mx-auto w-full shadow-[0_0_15px_rgba(140,198,63,0.3)]">
               <div className="relative z-10">
                 <h2 className="text-3xl font-semibold mb-4">Integrated Top of Funnel Management</h2>
                 <ul className="list-disc list-inside mb-6 text-left space-y-2">
@@ -47,7 +47,7 @@ const PackagesPageWrapper: React.FC = () => {
           </div>
 
           <div className="mb-16">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-2xl mx-auto w-full border border-[#8CC63F]">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg relative overflow-hidden max-w-2xl mx-auto w-full shadow-[0_0_15px_rgba(140,198,63,0.3)]">
               <div className="relative z-10">
                 <h2 className="text-3xl font-semibold mb-4">Add On Packages</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
