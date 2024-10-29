@@ -1,4 +1,4 @@
-  'use client'
+'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
@@ -66,10 +66,10 @@ const Roadmap: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-9">Your Roadmap</h2>
-        <div className="text-center mb-4">  
+    <section id="roadmap" className="bg-gradient-to-b from-black via-gray-900 to-black text-white relative overflow-hidden py-20">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Your Roadmap</h2>
+        <div className="text-center mb-8">  
           <Link href="https://meetings.hubspot.com/stephen-comstock" target="_blank" rel="noopener noreferrer" className="relative inline-flex group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#8CC63F] to-[#5A822A] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <button className="relative px-6 sm:px-8 py-3 bg-[#8CC63F] rounded-full leading-none flex items-center divide-x divide-gray-600 w-full sm:w-auto justify-center text-base">
@@ -83,7 +83,7 @@ const Roadmap: React.FC = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center relative max-w-md mx-auto w-full">
           {roadmapItems.map((item, index) => {
             const { ref, inView } = useInView({
               threshold: 0.1,

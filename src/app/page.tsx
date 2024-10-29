@@ -42,7 +42,7 @@ export default function LandingPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Header />
   
-        <main className="py-12 sm:py-20 text-center relative overflow-hidden mt-0">
+        <main className="py-8 sm:py-20 text-center relative overflow-hidden mt-16 sm:mt-0">
           <div className="absolute inset-0 bg-black z-0"></div>
           <div className="relative z-10">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 ">

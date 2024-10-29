@@ -5,8 +5,8 @@ import { faRoad, faEnvelope, faUsersCog, faChartLine } from '@fortawesome/free-s
 
 const We: React.FC = () => {
   return (
-    <section id="about-us" className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about-us" className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 min-h-screen">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-16">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-[#8CC63F]">
             GrowLexi
@@ -90,7 +90,6 @@ const We: React.FC = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
